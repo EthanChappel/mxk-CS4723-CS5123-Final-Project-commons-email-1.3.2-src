@@ -3,6 +3,7 @@ package org.apache.commons.mail;
 import org.apache.commons.mail.Email;
 import org.apache.commons.mail.EmailException;
 import org.apache.commons.mail.SimpleEmail;
+import javax.mail.internet.InternetAddress;
 
 import junit.framework.TestCase;
 
