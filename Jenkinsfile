@@ -35,9 +35,9 @@ pipeline {
             }
         }
         
-        stage('Delivery') {
+        stage('Deliver') {
             steps {
-                sh "echo mxk"
+                sh "echo Delivery script: mxk"
             }
         }
     }
