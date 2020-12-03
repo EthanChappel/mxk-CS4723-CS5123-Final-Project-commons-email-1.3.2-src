@@ -18,6 +18,9 @@ public class TestEmailFields extends TestCase{
 	}
 	
 	public void testAddBccMultiple() throws EmailException {
+		String message = "testAddBccMultiple()\nTest adding multiple recipients to the BCC field of an email\nmxk";
+		System.out.println(message);
+		
 		String[] bccs = {"a@b.com", "b@c.org", "c@d.net", "d@e.co.uk"};
 		testEmail.addBcc(bccs);  // Passing Array is the same as multiple arguments.
 		
@@ -32,6 +35,9 @@ public class TestEmailFields extends TestCase{
 	}
 	
 	public void testAddCc() throws EmailException {
+		String message = "testAddCc()\nTest adding recipient to the CC field of an email\nmxk";
+		System.out.println(message);
+		
 		testEmail.addCc("a@b.com");
 		assertEquals("a@b.com", testEmail.getCcAddresses().get(0).toString());
 	}
