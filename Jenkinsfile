@@ -37,7 +37,7 @@ pipeline {
         
         stage('Deliver') {
             steps {
-                sh "echo Delivery script: mxk"
+                sh "sh deliver.sh"
             }
         }
     }
